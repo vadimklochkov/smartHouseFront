@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/css/bootstrap.min.css">
+    <title>Умный дом</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-success">
+        <a class="navbar-brand" href="/home.html">Дом</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="/room.html">Комнаты</a>
+            <a class="nav-item nav-link active" href="/devices.html">Устройства</a>
+            <a class="nav-item nav-link active" href="/macros.html">Макросы</a>
+            <a class="nav-item nav-link active" href="/login.html">Авторизация</a>
+        </div>
+        </div>
+    </nav>
+    <!-- Макросы -->
+    <div class="container">
+        
+        <br>
+        <h5>Макросы умного дома</h5>
+        <hr>
+        <div class="row">
+            <div class="col-6">
+                <div class="alert alert-success" role="alert">
+                  Включить свет во всех комнатах!
+                </div>                
+            </div>
+            <div class="col-6">
+                <div class="alert alert-warning" role="alert">
+                    Выключить свет во всех комнатах!
+                </div>                
+            </div>
+            <div class="col-6">
+                <div class="alert alert-info" role="alert">
+                    Включить чайник на кухне!
+                </div>                
+            </div>
+            <div class="col-6">
+                <div class="alert alert-primary" role="alert">
+                    Включить свет и компьютер в кабинете!
+                </div>                
+            </div>
+        </div>
+        <div class="row">
+            <div class="col"><!-- Button trigger modal -->
+            <button type="button" class="btn" data-toggle="modal" data-target="#exampleModal">
+              Launch demo modal
+            </button>
+            
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Добавление макроса</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form>
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Название макроса</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                        <div class="form-group">
+                          <label for="exampleFormControlTextarea1">Сам макрос</label>
+                          <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+                        </div>
+                      </form>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Закрыть</button>
+                    <button type="button" class="btn btn-primary">Сохранить макрос</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+        </div>
+
+        </div>
+    </div>
+    
+</body>
+<script src="/js/jquery.min.js"></script>
+<script src="/js/bootstrap.min.js"></script>
+</html>
